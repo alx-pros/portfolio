@@ -1,0 +1,222 @@
+@import '/src/app.scss';
+
+.item4 {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+
+    .wrapper {
+        max-width: 1366px;
+        max-height: 768px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        height: 100%;
+        overflow: hidden;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+
+        .textContainer {
+            height: 60%;
+            width: 50%;
+            display: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+
+            @include mobile {
+                transform: none !important;
+                padding: 15px;
+                max-height: 530px;
+                min-height: 530px;
+                width: 100% !important;
+                align-items: center;
+                text-align: center;
+                gap: 0px;
+            }
+
+            @include mobile-landscape {
+                margin-top: -10px;
+            }
+
+            @include tablet {
+                transform: none !important;
+                height: 70%;
+                width: 70%;
+            }
+
+            h2 {
+                font-size: 40px;
+                padding: 20px 10px;
+                color: beige;
+
+                @include mobile {
+                    padding: 10px;
+                    font-size: 30px;
+                }
+
+                @include mobile-landscape {
+                    font-size: 18px !important;
+                }
+            }
+
+            p {
+                font-size: 25px;
+                text-justify: auto;
+                padding: 20px 10px;
+
+                @include mobile {
+                    font-size: 20px;
+                    padding: 0px;
+                }
+
+                @include mobile-landscape {
+                    font-size: 15px;
+                    padding: 0px !important;
+                }
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin: 10px;
+
+                @include mobile-landscape {
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px;
+                }
+            }
+        }
+
+        .sourceContainer {
+            position: relative;
+            max-width: 1366px;
+            height: 60%;
+            width: 50%;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            @include mobile {
+                min-width: 350px !important;
+                max-width: 350px !important;
+                max-height: 200px !important;
+                min-height: 200px !important;
+                margin-top: 70px !important;
+                flex-direction: row !important;
+            }
+
+            @include mobile-landscape {
+                margin-top: -110px !important;
+            }
+
+            @include tablet {
+                min-width: 300px;
+                max-width: 350px;
+                max-height: 350px;
+                min-height: 300px;
+                flex-direction: column;
+                margin-top: -200px;
+            }
+
+            .firstSpan {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 25%;
+                height: 25%;
+                transform: translate(0px, 50px);
+                border-top: 5px solid beige;
+                border-left: 5px solid beige;
+
+                @include mobile {
+                    top: -40px !important;
+                    left: 0px !important;
+                }
+
+                @include tablet {
+                    width: 20%;
+                    height: 20%;
+                    top: -30px;
+                    left: 40px;
+                }
+            }
+
+            .secondSpan {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 25%;
+                height: 25%;
+                transform: translate(0px, -80px);
+                border-bottom: 5px solid beige;
+                border-right: 5px solid beige;
+
+                @include mobile {
+                    bottom: -60px !important;
+                    right: 0px !important;
+                }
+
+                @include mobile-landscape {
+                    bottom: -130px !important;
+                }
+
+                @include tablet {
+                    width: 20%;
+                    height: 20%;
+                    bottom: -100px;
+                    right: 40px;
+                }
+            }
+
+            .logo3DContainer {
+                margin-left: 20px;
+                z-index: 1;
+
+                @include tablet {
+                    width: 160px !important;
+                    height: 230px !important;
+                    margin-left: -10px !important;
+                    margin-top: 0px !important;
+                    z-index: 0 !important;
+                }
+
+                @include tablet {
+                    margin-top: 500px;
+                }
+            }
+
+            .logoAnimationContainer {
+                width: 40%;
+                height: 50%;
+
+                @include mobile {
+                    width: 150px !important;
+                    height: 120px !important;
+                }
+
+                @include tablet {
+                    width: 50%;
+                    height: 50%;
+                }
+
+                video {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+    }
+}

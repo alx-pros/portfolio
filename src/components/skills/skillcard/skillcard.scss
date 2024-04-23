@@ -1,0 +1,107 @@
+@import '/src/app.scss';
+
+.skills-card {
+    width: 300px;
+    height: 100px;
+    border-radius: 3px;
+    border: 1.5px solid black;
+    padding: 20px; 
+    margin-left: 50px;
+    text-align: center;
+    background: transparent; 
+    backdrop-filter: blur (1px);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    @include mobile {
+        height: 50px !important;
+        width: 140px !important;
+        padding: 0 !important;
+    }
+
+    @include mobile-landscape {
+        height: 40px !important;
+        width: 100px !important;
+        padding: 0px !important;
+    }
+
+    @include tablet {
+        width: 180px;
+        height: 80px;
+        margin: auto;
+        
+    }
+
+    .skill-icon {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 7px;
+        border: 1.5px solid black;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+
+        @include mobile {
+            width: 40px !important;
+            height: 40px !important;
+        }
+
+        @include mobile-landscape {
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+        @include tablet {
+            width: 45px;
+            height: 45px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+
+            @include mobile {
+                width: 30px !important;
+                height: 30px !important;
+            }
+
+            @include mobile-landscape {
+                width: 25px !important;
+                height: 25px !important;
+            }
+
+            @include tablet {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+    
+    span {
+        font-size: 22px;
+        font-weight: 25px;
+
+        @include mobile {
+            font-size: 12px !important;
+        }
+
+        @include mobile-landscape {
+            font-size: 10px !important;
+        }
+
+        @include tablet {
+            font-size: 17px;
+        }
+    }
+}
+
+.skills-card:hover,
+.skills-card:active {
+        background: #d9d9d9;
+    }

@@ -1,0 +1,115 @@
+@import "../../app.scss";
+
+.hero {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background-color: #ebecf0;
+    position: relative;
+
+    .wrapper {
+        max-width: 1366px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+        .textContainer {
+            position: relative;
+            width: 70%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+
+            @include mobile {
+                height: 100px !important;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
+
+            @include mobile-landscape {
+                width: 70% !important;
+                height: 80% !important;
+            }
+
+            @include tablet {
+                height: 400px;
+            }
+
+            h1 {
+                font-style: 30px;
+                text-shadow: 1px 1px black;
+                letter-spacing: 10px;
+                font-size: 40px;
+                color: black;
+
+                @include mobile {
+                    font-size: 15px !important;
+                }
+
+                @include mobile-landscape {
+                    font-size: 15px !important;
+                }
+
+                @include tablet {
+                    font-size: 20px;
+                }
+
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .imageContainer {
+        max-width: 1366px;
+        width: 35%;
+        height: 80%;
+        right: 0px;
+        bottom: 100px;
+        position: absolute;
+
+        @include mobile {
+            width: unset !important;
+            height: 70% !important;
+            bottom: 0px;
+            align-items: center !important;
+        }
+
+        @include mobile-landscape {
+            top: 0px;
+            right: -240px;
+        }
+
+        @include tablet {
+            width: 500px;
+            height: 500px;
+            bottom: 50px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @include mobile {
+                width: 400px;
+                height: 400px;
+            }
+
+            @include mobile-landscape {
+                width: 240px !important;
+                height: 240px !important;
+            }
+        }
+    }
+}

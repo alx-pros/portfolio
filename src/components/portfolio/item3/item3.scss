@@ -1,0 +1,177 @@
+@import '/src/app.scss';
+
+.item3 {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+
+    .wrapper {
+        max-width: 1366px;
+        max-height: 768px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        height: 100%;
+        overflow: hidden;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .frameContainer {
+            height: 60%;
+            width: 50%;
+            position: relative;
+            padding: 20px;
+            
+            @include mobile {
+                min-width: 350px !important;
+                max-width: 350px !important;
+                max-height: 200px !important;
+                min-height: 200px !important;
+                margin-top: 150px !important;
+            }
+
+            @include mobile-landscape {
+                margin-top: -130px !important;
+            }
+
+            @include tablet {
+                min-width: 300px;
+                max-width: 350px;
+                max-height: 220px;
+                min-height: 220px;
+                margin-top: -200px;
+            }
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            .firstSpan {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30%;
+                height: 30%;
+                transform: translate(-10px, -10px);
+                border-top: 5px solid beige;
+                border-left: 5px solid beige;
+
+                @include mobile {
+                    top: 10px !important;
+                    left: 10px !important;
+                    width: 15% !important;
+                    height: 15% !important;
+                }
+
+                @include tablet {
+                    width: 20%;
+                    height: 20%;
+                }
+            }
+
+            .secondSpan {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                width: 30%;
+                height: 30%;
+                transform: translate(10px, 10px);
+                border-bottom: 5px solid beige;
+                border-right: 5px solid beige;
+
+                @include mobile {
+                    bottom: 10px !important;
+                    right: 10px !important;
+                    width: 15% !important;
+                    height: 15% !important;
+                }
+
+                @include tablet {
+                    width: 20%;
+                    height: 20%;
+                }
+            } 
+        }
+
+        .textContainer {
+            max-width: 1366px;
+            height: 60%;
+            width: 50%;
+            display: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 50px;
+
+            @include mobile {
+                transform: none !important;
+                max-height: 530px;
+                min-height: 530px;
+                width: 100% !important;
+                padding: 15px;
+                align-items: center;
+                text-align: center;
+            }
+
+            @include mobile-landscape {
+                margin-top: -130px;
+            }
+
+            @include tablet {
+                transform: none !important;
+                height: 90% !important;
+            }
+
+            h2 {
+                font-size: 40px;
+                padding: 20px 10px;
+                color: beige;
+
+                @include mobile {
+                    font-size: 30px;
+                    padding: 10px;
+                }
+
+                @include mobile-landscape {
+                    font-size: 18px !important;
+                }
+            }
+
+            p {
+                font-size: 25px;
+                text-justify: auto;
+                padding: 20px 10px;
+
+                @include mobile {
+                    padding: 0px;
+                    font-size: 20px;
+                }
+
+                @include mobile-landscape {
+                    font-size: 15px;
+                    padding: 0px !important;
+                }
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+
+                @include mobile-landscape {
+                    width: 20px;
+                    height: 20px;
+                    margin: 2px;
+                }
+            }
+        }
+    }
+}

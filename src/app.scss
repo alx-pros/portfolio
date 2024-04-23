@@ -1,0 +1,52 @@
+html{
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body{
+  background: linear-gradient(180deg, gray, black);
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section{
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+@mixin mobile {
+  @media(max-width: 738px) and (orientation:portrait) {
+    @content;
+  }
+}
+
+@mixin mobile-landscape {
+  @media(max-width: 960px) and (max-height: 440px) and (orientation:landscape){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px){
+    @content;
+  }
+}
+
+
+
+
+
+
+
+
