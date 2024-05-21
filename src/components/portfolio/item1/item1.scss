@@ -46,7 +46,6 @@
         }
 
         .frameContainer {
-            max-width: 1366px;
             position: relative;
             height: 60%;
             width: 50%;
@@ -57,6 +56,7 @@
                 max-width: 350px !important;
                 max-height: 350px !important;
                 min-height: 350px !important;
+                margin-top: 110px !important;
             }
 
             @include tablet {
@@ -64,25 +64,22 @@
                 max-width: 350px;
                 max-height: 350px;
                 min-height: 300px;
+                margin-top: 100px;
             }
 
-
-            .videoContainer {
-                max-width: 1366px;
-                padding: 56.25% 0 0 0;
+            iframe {
                 position: relative;
                 z-index: 1;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
 
-                iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
+                @include mobile {
+                    height: 60% !important;
+                }
 
-                    @include mobile {
-                        top: 10px;
-                    }
+                @include tablet {
+                    height: 60%;
                 }
             }
 
@@ -97,38 +94,42 @@
                 border-left: 5px solid beige;
 
                 @include mobile {
-                    top: 10px;
+                    top: 5px !important;
+                }
+
+                @include mobile-landscape {
+                    top: 0px !important;
                 }
 
                 @include tablet {
                     width: 15%;
                     height: 15%;
+                    top: 0px;
                 }
             }
 
             .secondSpan {
-                max-width: 1366px;
                 position: absolute;
                 bottom: 0;
                 right: 0;
                 width: 30%;
                 height: 30%;
-                transform: translate(0px, -50px);
+                transform: translate(0px, 0px);
                 border-bottom: 5px solid beige;
                 border-right: 5px solid beige;
 
                 @include mobile {
-                    bottom: 80px !important;
+                    bottom: 120px !important;
                 }
 
                 @include mobile-landscape {
-                    bottom: 40px !important;
+                    bottom: 105px !important;
                 }
 
                 @include tablet {
                     width: 15%;
                     height: 15%;
-                    bottom: 90px;
+                    bottom: 120px;
                 }
             } 
         }
@@ -148,7 +149,7 @@
                 max-height: 530px;
                 min-height: 530px;
                 width: 100% !important;
-                margin-top: -190px;
+                margin-top: -100px;
                 align-items: center;
                 text-align: center;
             }

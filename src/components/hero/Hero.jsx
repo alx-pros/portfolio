@@ -38,9 +38,9 @@ const Hero = () => {
                 <motion.img variants={textVariants} animate="scrollButton" src="mouse.png" alt="mouse scroller" />
             </motion.div>
         </div>
-                <div className="imageContainer">
+            <div className="imageContainer">
                 <img src="myphoto.png" alt="Alex Prostamo foto"/>
-                </div>
+            </div>
         </div>
     )   
 };

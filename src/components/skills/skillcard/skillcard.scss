@@ -1,12 +1,11 @@
 @import '/src/app.scss';
 
 .skills-card {
-    width: 300px;
+    width: 250px;
     height: 100px;
     border-radius: 3px;
     border: 1.5px solid black;
     padding: 20px; 
-    margin-left: 50px;
     text-align: center;
     background: transparent; 
     backdrop-filter: blur (1px);

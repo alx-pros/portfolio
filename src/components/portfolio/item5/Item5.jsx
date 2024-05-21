@@ -15,9 +15,7 @@ const Item5 = () => {
         <div className="item5">
             <div className="wrapper">
                 <div className="frameContainer" ref={ref}>
-                    <div className="imageContainer">
                         <img src="imagesite.png" alt="immagine del sito" />
-                    </div>
                     <span className="firstSpan"></span>
                     <span className="secondSpan"></span>
                 </div>

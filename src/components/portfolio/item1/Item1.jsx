@@ -18,17 +18,18 @@ const Item1 = () => {
             </div>
             <div className="wrapper">
                 <div className="frameContainer" ref={ref}>
-                    <div className="videoContainer">
-                        <iframe 
-                            src="https://player.vimeo.com/video/920651151?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                            frameBorder="0"
-                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                            title="Boredom">
-                        </iframe>
-                    </div>
-                    <script src="https://player.vimeo.com/api/player.js"></script>
-                    <span className="firstSpan"></span>
-                    <span className="secondSpan"></span>
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/Nooow7wf2yk?si=j_CgO-zb1sKTzPIh" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen>
+                </iframe>                    
+                <span className="firstSpan"></span>
+                <span className="secondSpan"></span>
                 </div>
                 <motion.div className="textContainer" style={{y}}>
                     <h2>
